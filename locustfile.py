@@ -32,7 +32,7 @@ def index(l):
     l.client.get("/")
 
 def setCurrency(l):
-    currencies = ['EUR', 'USD', 'JPY', 'CAD']
+    currencies = ['EUR', 'USD', 'JPY', 'CAD', 'INR']
     l.client.post("/setCurrency",
         {'currency_code': random.choice(currencies)})
 
